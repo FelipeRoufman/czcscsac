@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	
+	int salario,perda,Mperda,total;
+	
+	printf("Quanto e o seu salario:\n");
+	scanf("%d",&salario);
+	
+	do{
+		
+		printf("Quanto voce gastou:\n");
+		scanf("%d",&Mperda);
+		if (Mperda > 0)
+		{
+			
+			total += Mperda;
+			
+		}
+		
+	}while(Mperda > 0);
+	
+	
+	printf("o total de gastos foi: %d\n\n",total);
+	
+	if(total <= salario)
+
+		printf("Gastos dentro do orçamento\n");
+		
+	else
+
+			printf("Orcamento estourado\n");
+	
+	
+	system("pause");
+	
+}
